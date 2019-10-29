@@ -4,16 +4,16 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Models;
+namespace lionvc\Laracms\Models;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -23,18 +23,18 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * 表单模型
  *
  * Class File
- * @package Wanglelecc\Laracms\Models
+ * @package lionvc\Laracms\Models
  */
 class Form extends Model
 {
     use SoftDeletes;
-    
+
     protected $fillable = ['id','object_id', 'form', 'user_id', 'ip', 'location', 'data', 'status', ];
-    
+
     protected $dates = ['created_at', 'updated_at', 'deleted_at'];
 
     public function user(){
-        return $this->belongsTo('Wanglelecc\Laracms\Models\User', 'user_id');
+        return $this->belongsTo('lionvc\Laracms\Models\User', 'user_id');
     }
 
     /**
@@ -61,5 +61,5 @@ class Form extends Model
 
         return $value;
     }
-    
+
 }

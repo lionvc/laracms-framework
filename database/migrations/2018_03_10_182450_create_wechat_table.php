@@ -4,11 +4,11 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
@@ -42,10 +42,10 @@ class CreateWechatTable extends Migration
             $table->enum("primary", ['0','1'])->default('0')->comment('默认公众号:0未认证;1已认证');
             $table->enum("certified", ['0','1'])->default('0')->comment('认证类型:0未认证;1已认证');
             $table->enum("status",[0,1,2])->default('0')->comment('状态');
-    
+
             $table->timestamps();
             $table->softDeletes();
-    
+
             $table->unique('object_id','object_id_unique_index');
             $table->index('app_id','app_id_index');
         });
@@ -59,13 +59,13 @@ class CreateWechatTable extends Migration
             $table->enum("type",['click','view','media_id','view_limited','text','event','content',])->comment('类型');
             $table->text("data")->nullable()->comment('附加内容');
             $table->integer("order")->default(0)->comment("排序");
-            
+
             $table->timestamps();
             $table->softDeletes();
-            
+
             $table->foreign('group')->references('id')->on('wechat')->onDelete('cascade');
             $table->index('group','group_index');
-            
+
         });
 
         # 公众号消息表
@@ -81,10 +81,10 @@ class CreateWechatTable extends Migration
             $table->char('type',32)->comment("类型");
             $table->tinyInteger('replied')->default(0)->unsigned()->comment('回复ID');
             $table->dateTime('time')->comment('消息时间');
-            
+
             $table->timestamps();
             $table->softDeletes();
-    
+
             $table->index('wechat_id','wechat_id_index');
             $table->index('wid','wid_index');
             $table->index('to','to_index');
@@ -92,7 +92,7 @@ class CreateWechatTable extends Migration
             $table->index('response','response_index');
             $table->index('time','time_index');
             $table->index('replied','replied_index');
-            
+
         });
 
         # 公众号响应表
@@ -105,10 +105,10 @@ class CreateWechatTable extends Migration
             $table->enum("type",['text','news','link',])->comment('类型');
             $table->string('source',128)->nullable()->comment('来源');
             $table->text('content')->comment('消息内容');
-            
+
             $table->timestamps();
             $table->softDeletes();
-    
+
             $table->index('wechat_id','wechat_id_index');
         });
 

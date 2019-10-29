@@ -4,18 +4,18 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Models\Traits;
+namespace lionvc\Laracms\Models\Traits;
 
-use Wanglelecc\Laracms\Models\MultipleFile;
+use lionvc\Laracms\Models\MultipleFile;
 
 trait WithMultipleFilesTraits{
 
@@ -26,7 +26,7 @@ trait WithMultipleFilesTraits{
      */
     public function multiple_files(){
 
-        $morphMany = $this->morphMany('Wanglelecc\Laracms\Models\MultipleFile', 'multiple_file_table');
+        $morphMany = $this->morphMany('lionvc\Laracms\Models\MultipleFile', 'multiple_file_table');
 
         list($one, $caller) = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, 2);
 
@@ -103,7 +103,7 @@ trait WithMultipleFilesTraits{
      * @param $multipleFile
      * @param $field
      * @param $order
-     * @return \Wanglelecc\Laracms\Models\MultipleFile
+     * @return \lionvc\Laracms\Models\MultipleFile
      */
     public function getStoredMultipleFile($multipleFile, $field, $order){
         return new MultipleFile([

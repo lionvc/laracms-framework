@@ -4,28 +4,28 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Handlers;
+namespace lionvc\Laracms\Handlers;
 
-use Wanglelecc\Laracms\Http\Requests\Request;
-use Wanglelecc\Laracms\Models\WechatMenu;
-use Wanglelecc\Laracms\Models\Wechat;
-use Wanglelecc\Laracms\Models\WechatResponse;
+use lionvc\Laracms\Http\Requests\Request;
+use lionvc\Laracms\Models\WechatMenu;
+use lionvc\Laracms\Models\Wechat;
+use lionvc\Laracms\Models\WechatResponse;
 use EasyWeChat\Kernel\Contracts\EventHandlerInterface;
 
 /**
  * 微信文本消息处理
  *
  * Class TextMessageHandler
- * @package Wanglelecc\Laracms\Handlers
+ * @package lionvc\Laracms\Handlers
  */
 class TextMessageHandler
 {

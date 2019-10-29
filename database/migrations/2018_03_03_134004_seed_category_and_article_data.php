@@ -4,11 +4,11 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
@@ -16,10 +16,10 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-use Wanglelecc\Laracms\Models\Article;
-use Wanglelecc\Laracms\Models\Category;
-use Wanglelecc\Laracms\Models\Page;
-use Wanglelecc\Laracms\Models\Navigation;
+use lionvc\Laracms\Models\Article;
+use lionvc\Laracms\Models\Category;
+use lionvc\Laracms\Models\Page;
+use lionvc\Laracms\Models\Navigation;
 
 
 class SeedCategoryAndArticleData extends Migration

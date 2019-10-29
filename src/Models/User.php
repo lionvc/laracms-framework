@@ -4,16 +4,16 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Models;
+namespace lionvc\Laracms\Models;
 
 use Auth;
 use Tymon\JWTAuth\Contracts\JWTSubject;
@@ -22,8 +22,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Permission\Traits\HasRoles;
-use Wanglelecc\Laracms\Models\Traits\WithOrderHelper;
-use Wanglelecc\Laracms\Events\BehaviorLogEvent;
+use lionvc\Laracms\Models\Traits\WithOrderHelper;
+use lionvc\Laracms\Events\BehaviorLogEvent;
 
 /**
  * 用户模型
@@ -33,9 +33,9 @@ use Wanglelecc\Laracms\Events\BehaviorLogEvent;
  */
 class User extends Authenticatable implements JWTSubject
 {
- 
+
 //    use SoftDeletes;
- 
+
     /**
      * The attributes that are mass assignable.
      *
@@ -44,7 +44,7 @@ class User extends Authenticatable implements JWTSubject
     protected $fillable = [
         'id','name', 'phone', 'email', 'password', 'avatar', 'introduction', 'status', 'weixin_openid', 'weixin_unionid', 'weibo_id', 'qq_id', 'github_id', 'last_ip', 'last_location', 'last_at',
     ];
-    
+
     protected $dates = ['created_at', 'updated_at', 'deleted_at', 'last_at'];
 
     public function titleName(){

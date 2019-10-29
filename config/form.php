@@ -4,11 +4,11 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/09/25 13:27:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
@@ -16,21 +16,21 @@ use Illuminate\Validation\Rule;
 
 return [
     'structure' => [
-        
+
         'feedback' => [
             'form'          => 'feedback',
             'name'          => 'feedback',
             'title'         => '意见反馈',
             'template'      => '',
             'verification'  => true,
-            
+
             'redirect'      => [ 'route' => 'index', 'message' => '提交成功', ],
-            
+
             'creating'      => function($requests){ return true; },
             'created'       => function($requests, $form){},
-            
+
             'field'         => [
-                
+
                 'title' => [
                     'name'          => '标题',
                     'type'          => 'text',
@@ -43,7 +43,7 @@ return [
                     ],
                     'messages'      => [],
                 ],
-                
+
                 'description' => [
                     'name'          => '描述',
                     'type'          => 'textarea',
@@ -56,7 +56,7 @@ return [
                     ],
                     'messages'      => [],
                 ],
-    
+
                 'sex' => [
                     'name'          => '性别',
                     'type'          => 'radio',
@@ -72,7 +72,7 @@ return [
                     ],
                     'messages'      => [],
                 ],
-                
+
                 'hobby' => [
                     'name'          => '兴趣爱好',
                     'type'          => 'checkbox',
@@ -88,11 +88,11 @@ return [
                     ],
                     'messages'      => [],
                 ],
-                
+
             ],
-            
-            
+
+
         ],
-        
+
     ],
 ];

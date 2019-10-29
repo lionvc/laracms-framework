@@ -4,22 +4,22 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Observers;
+namespace lionvc\Laracms\Observers;
 
 use Ip;
 use Auth;
 use Agent;
 use Request;
-use Wanglelecc\Laracms\Models\Log;
+use lionvc\Laracms\Models\Log;
 use Illuminate\Support\Carbon;
 
 // creating, created, updating, updated, saving,
@@ -29,7 +29,7 @@ use Illuminate\Support\Carbon;
  * 日志观察者
  *
  * Class LogObserver
- * @package Wanglelecc\Laracms\Observers
+ * @package lionvc\Laracms\Observers
  */
 class LogObserver
 {

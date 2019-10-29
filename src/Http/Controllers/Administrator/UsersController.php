@@ -4,32 +4,32 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
+namespace lionvc\Laracms\Http\Controllers\Administrator;
 
 use Hash;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
-//use Wanglelecc\Laracms\Models\User;
+//use lionvc\Laracms\Models\User;
 use Illuminate\Support\Facades\Validator;
-use Wanglelecc\Laracms\Http\Requests\Administrator\UserRequest;
-use Wanglelecc\Laracms\Handlers\UploadHandler;
+use lionvc\Laracms\Http\Requests\Administrator\UserRequest;
+use lionvc\Laracms\Handlers\UploadHandler;
 
 
 /**
  * 用户控制器
  *
  * Class UsersController
- * @package Wanglelecc\Laracms\Http\Controllers\Administrator
+ * @package lionvc\Laracms\Http\Controllers\Administrator
  */
 class UsersController extends Controller
 {
@@ -37,7 +37,7 @@ class UsersController extends Controller
     {
         static::$activeNavId = 'system.users';
     }
-    
+
     /**
      * 列表
      *
@@ -106,7 +106,7 @@ class UsersController extends Controller
         $roles = Role::get()->pluck('name', 'remarks')->toArray();
         $userRoles = $user->roles()->get();
         $userRoles = $user->roles()->pluck('name', 'name')->toArray();
-        
+
         return backend_view('users.create_and_edit', compact('user','roles', 'userRoles'));
     }
 

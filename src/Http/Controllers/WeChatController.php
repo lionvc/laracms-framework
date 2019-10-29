@@ -4,30 +4,30 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers;
+namespace lionvc\Laracms\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Log;
-use Wanglelecc\Laracms\Models\Wechat;
+use lionvc\Laracms\Models\Wechat;
 use EasyWeChat\Kernel\Messages\Message;
 use EasyWeChat\Kernel\Messages\Transfer;
-use Wanglelecc\Laracms\Handlers\TextMessageHandler;
-use Wanglelecc\Laracms\Handlers\EventMessageHandler;
+use lionvc\Laracms\Handlers\TextMessageHandler;
+use lionvc\Laracms\Handlers\EventMessageHandler;
 
 /**
  * 微信控制器
  *
  * Class WeChatController
- * @package Wanglelecc\Laracms\Http\Controllers
+ * @package lionvc\Laracms\Http\Controllers
  */
 class WeChatController extends Controller
 {

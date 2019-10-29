@@ -8,4 +8,4 @@
 - Mysql 5.7+
 
 ## 安装
-安装说明请移步：https://www.kancloud.cn/wanglelecc/laracms/840009
+安装说明请移步：https://www.kancloud.cn/lionvc/laracms/840009

@@ -1,12 +1,12 @@
 {
-    "name": "wanglelecc/laracms-framework",
+    "name": "lionvc/laracms-framework",
     "description": "A LaraCMS Framework.",
     "license": "MIT",
     "authors": [
         {
-            "name": "wanglelecc",
-            "email": "wanglelecc@gmail.com",
-            "homepage": "https://www.56br.com",
+            "name": "lionvc",
+            "email": "lionvc@lionvc.com",
+            "homepage": "https://www.lionvc.com",
             "role": "Developer"
         }
     ],
@@ -65,7 +65,7 @@
         "classmap": [
         ],
         "psr-4": {
-            "Wanglelecc\\Laracms\\": "src/"
+            "lionvc\\Laracms\\": "src/"
         },
         "files": [
             "src/Support/Helpers.php"
@@ -86,15 +86,15 @@
     "extra": {
         "laravel" : {
             "providers" : [
-                "Wanglelecc\\Laracms\\Providers\\AliyunOssServiceProvider",
-                "Wanglelecc\\Laracms\\Providers\\AppServiceProvider",
-                "Wanglelecc\\Laracms\\Providers\\AuthServiceProvider",
-                "Wanglelecc\\Laracms\\Providers\\AzureStorageServiceProvider",
-                "Wanglelecc\\Laracms\\Providers\\EasySmsServiceProvider",
-                "Wanglelecc\\Laracms\\Providers\\EventServiceProvider",
-                "Wanglelecc\\Laracms\\Providers\\LaracmsServiceProvider",
-                "Wanglelecc\\Laracms\\Providers\\RouteServiceProvider",
-                "Wanglelecc\\Laracms\\Providers\\ScoutServiceProvider"
+                "lionvc\\Laracms\\Providers\\AliyunOssServiceProvider",
+                "lionvc\\Laracms\\Providers\\AppServiceProvider",
+                "lionvc\\Laracms\\Providers\\AuthServiceProvider",
+                "lionvc\\Laracms\\Providers\\AzureStorageServiceProvider",
+                "lionvc\\Laracms\\Providers\\EasySmsServiceProvider",
+                "lionvc\\Laracms\\Providers\\EventServiceProvider",
+                "lionvc\\Laracms\\Providers\\LaracmsServiceProvider",
+                "lionvc\\Laracms\\Providers\\RouteServiceProvider",
+                "lionvc\\Laracms\\Providers\\ScoutServiceProvider"
             ]
         }
     }

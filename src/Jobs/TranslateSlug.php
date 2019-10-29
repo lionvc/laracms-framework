@@ -4,16 +4,16 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Jobs;
+namespace lionvc\Laracms\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;
@@ -21,8 +21,8 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 
-//use Wanglelecc\Laracms\Models\Topic;
-use Wanglelecc\Laracms\Handlers\SlugTranslateHandler;
+//use lionvc\Laracms\Models\Topic;
+use lionvc\Laracms\Handlers\SlugTranslateHandler;
 
 class TranslateSlug implements ShouldQueue
 {

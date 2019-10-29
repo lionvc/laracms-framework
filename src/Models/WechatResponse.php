@@ -4,21 +4,21 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Models;
+namespace lionvc\Laracms\Models;
 
 use EasyWeChat\Kernel\Messages\Text;
 use EasyWeChat\Kernel\Messages\News;
 use EasyWeChat\Kernel\Messages\NewsItem;
-use Wanglelecc\Laracms\Events\BehaviorLogEvent;
+use lionvc\Laracms\Events\BehaviorLogEvent;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 
@@ -26,7 +26,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * 微信响应模型
  *
  * Class WechatResponse
- * @package Wanglelecc\Laracms\Models
+ * @package lionvc\Laracms\Models
  */
 class WechatResponse extends Model
 {

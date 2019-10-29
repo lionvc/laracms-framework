@@ -4,26 +4,26 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
+namespace lionvc\Laracms\Http\Controllers\Administrator;
 
-use Wanglelecc\Laracms\Models\Block;
+use lionvc\Laracms\Models\Block;
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Http\Requests\Administrator\BlockRequest;
+use lionvc\Laracms\Http\Requests\Administrator\BlockRequest;
 
 /**
  * 后台区块管理控制器
  *
  * Class BlocksController
- * @package Wanglelecc\Laracms\Http\Controllers\Administrator
+ * @package lionvc\Laracms\Http\Controllers\Administrator
  */
 class BlocksController extends Controller
 {

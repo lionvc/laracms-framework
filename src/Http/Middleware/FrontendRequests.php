@@ -1,6 +1,6 @@
 <?php
 
-namespace Wanglelecc\Laracms\Http\Middleware;
+namespace lionvc\Laracms\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

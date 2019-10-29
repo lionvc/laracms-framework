@@ -1,6 +1,6 @@
 <?php
 
-namespace Wanglelecc\Laracms\Providers;
+namespace lionvc\Laracms\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -21,18 +21,18 @@ class EventServiceProvider extends ServiceProvider
             'SocialiteProviders\Weibo\WeiboExtendSocialite@handle',
         ],
 
-        'Wanglelecc\LaracmsEvents\BehaviorLogEvent' => [
-            'Wanglelecc\Laracms\Listeners\BehaviorLogListener',
+        'lionvc\LaracmsEvents\BehaviorLogEvent' => [
+            'lionvc\Laracms\Listeners\BehaviorLogListener',
         ],
 
-        'Wanglelecc\Laracms\Events\Event' => [
-            'Wanglelecc\Laracms\Listeners\EventListener',
+        'lionvc\Laracms\Events\Event' => [
+            'lionvc\Laracms\Listeners\EventListener',
         ],
 
 
 
 //        'Illuminate\Auth\Events\Login' => [
-//            'Wanglelecc\Laracms\Listeners\UserEventSubscriber@onUserLogin'
+//            'lionvc\Laracms\Listeners\UserEventSubscriber@onUserLogin'
 //        ],
     ];
 
@@ -42,7 +42,7 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $subscribe = [
-        'Wanglelecc\Laracms\Listeners\UserEventSubscriber',
+        'lionvc\Laracms\Listeners\UserEventSubscriber',
     ];
 
     /**

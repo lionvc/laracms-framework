@@ -1,8 +1,8 @@
 <?php
 
-namespace Wanglelecc\Laracms\Listeners;
+namespace lionvc\Laracms\Listeners;
 
-use Wanglelecc\Laracms\Events\BehaviorLogEvent;
+use lionvc\Laracms\Events\BehaviorLogEvent;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 

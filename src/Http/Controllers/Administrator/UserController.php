@@ -4,29 +4,29 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
+namespace lionvc\Laracms\Http\Controllers\Administrator;
 
 use Hash;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use Wanglelecc\Laracms\Models\User;
-use Wanglelecc\Laracms\Http\Requests\Administrator\UserRequest;
-use Wanglelecc\Laracms\Handlers\UploadHandler;
+use lionvc\Laracms\Models\User;
+use lionvc\Laracms\Http\Requests\Administrator\UserRequest;
+use lionvc\Laracms\Handlers\UploadHandler;
 
 /**
  * 用户操作控制器
  *
  * Class UserController
- * @package Wanglelecc\Laracms\Http\Controllers\Administrator
+ * @package lionvc\Laracms\Http\Controllers\Administrator
  */
 class UserController extends Controller
 {
@@ -34,7 +34,7 @@ class UserController extends Controller
     {
         static::$activeNavId = 'system.users';
     }
-    
+
     /**
      * 编辑
      *

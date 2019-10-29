@@ -4,23 +4,23 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Models;
+namespace lionvc\Laracms\Models;
 
 use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Wanglelecc\Laracms\Models\Traits\WithCommonHelper;
-use Wanglelecc\Laracms\Events\BehaviorLogEvent;
+use lionvc\Laracms\Models\Traits\WithCommonHelper;
+use lionvc\Laracms\Events\BehaviorLogEvent;
 use Illuminate\Database\Eloquent\Builder;
 
 
@@ -28,7 +28,7 @@ use Illuminate\Database\Eloquent\Builder;
  * 文章模型
  *
  * Class Article
- * @package Wanglelecc\Laracms\Models
+ * @package lionvc\Laracms\Models
  */
 class Article extends Model
 {
@@ -84,11 +84,11 @@ class Article extends Model
     }
 
     public function created_user(){
-        return $this->belongsTo('Wanglelecc\Laracms\Models\User', 'created_op');
+        return $this->belongsTo('lionvc\Laracms\Models\User', 'created_op');
     }
 
     public function updated_user(){
-        return $this->belongsTo('Wanglelecc\Laracms\Models\User', 'updated_op');
+        return $this->belongsTo('lionvc\Laracms\Models\User', 'updated_op');
     }
 
     public function replies()
@@ -122,7 +122,7 @@ class Article extends Model
     public function category(): MorphToMany
     {
         return $this->morphToMany(
-            'Wanglelecc\Laracms\Models\Category',
+            'lionvc\Laracms\Models\Category',
             'model',
             'model_has_category',
             'model_id',
@@ -138,7 +138,7 @@ class Article extends Model
     public function categorys(): BelongsToMany
     {
         return $this->belongsToMany(
-            'Wanglelecc\Laracms\Models\Category',
+            'lionvc\Laracms\Models\Category',
             'article_category',
             'article_id',
             'category_id'

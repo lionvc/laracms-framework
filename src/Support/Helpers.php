@@ -4,11 +4,11 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
@@ -473,10 +473,10 @@ if( !function_exists("model_link") ){
 if(!function_exists("model_plural_name")){
     function model_plural_name($model)
     {
-        // 从实体中获取完整类名，例如：Wanglelecc\Laracms\Models\User
+        // 从实体中获取完整类名，例如：lionvc\Laracms\Models\User
         $full_class_name = get_class($model);
 
-        // 获取基础类名，例如：传参 `Wanglelecc\Laracms\Models\User` 会得到 `User`
+        // 获取基础类名，例如：传参 `lionvc\Laracms\Models\User` 会得到 `User`
         $class_name = class_basename($full_class_name);
 
         // 蛇形命名，例如：传参 `User`  会得到 `user`, `FooBar` 会得到 `foo_bar`
@@ -503,7 +503,7 @@ if( !function_exists("frontend_navigation") ){
      * @return mixed
      */
     function frontend_navigation($category = 'desktop'){
-        return $navigationHandler = app(\Wanglelecc\Laracms\Handlers\NavigationHandler::class)->frontend($category);
+        return $navigationHandler = app(\lionvc\Laracms\Handlers\NavigationHandler::class)->frontend($category);
     }
 }
 
@@ -515,7 +515,7 @@ if( !function_exists("frontend_complete_navigation") ){
      * @return mixed
      */
     function frontend_complete_navigation($category = 'desktop'){
-        return $navigationHandler = app(\Wanglelecc\Laracms\Handlers\NavigationHandler::class)->completeFrontend($category);
+        return $navigationHandler = app(\lionvc\Laracms\Handlers\NavigationHandler::class)->completeFrontend($category);
     }
 }
 
@@ -528,7 +528,7 @@ if( !function_exists("frontend_current_brother_and_child_navigation") ){
      * @return mixed
      */
     function frontend_current_brother_and_child_navigation($category = 'desktop', $showOneLevel = false){
-        return $navigationHandler = app(\Wanglelecc\Laracms\Handlers\NavigationHandler::class)->getCurrentBrothersAndChildNavigation($category, $showOneLevel);
+        return $navigationHandler = app(\lionvc\Laracms\Handlers\NavigationHandler::class)->getCurrentBrothersAndChildNavigation($category, $showOneLevel);
     }
 }
 
@@ -540,7 +540,7 @@ if( !function_exists("frontend_current_child_navigation") ){
      * @return mixed
      */
     function frontend_current_child_navigation($category = 'desktop'){
-        return $navigationHandler = app(\Wanglelecc\Laracms\Handlers\NavigationHandler::class)->getCurrentChildNavigation($category);
+        return $navigationHandler = app(\lionvc\Laracms\Handlers\NavigationHandler::class)->getCurrentChildNavigation($category);
     }
 }
 
@@ -551,7 +551,7 @@ if( !function_exists("breadcrumb") ){
      * @return mixed
      */
     function breadcrumb(){
-        return $navigationHandler = app(\Wanglelecc\Laracms\Handlers\NavigationHandler::class)->breadcrumb();
+        return $navigationHandler = app(\lionvc\Laracms\Handlers\NavigationHandler::class)->breadcrumb();
     }
 }
 
@@ -572,7 +572,7 @@ if(!function_exists("get_block")){
             return $block;
         }
 
-        $block =  app(\Wanglelecc\Laracms\Handlers\BlockHandler::class)->getBlockData($object_id);
+        $block =  app(\lionvc\Laracms\Handlers\BlockHandler::class)->getBlockData($object_id);
 
         if(\App::environment('production')){
             $expiredAt = now()->addMinutes(config('cache.expired.block', 10));
@@ -662,7 +662,7 @@ if( !function_exists("laracms_log") ){
      * @return mixed
      */
     function laracms_log($group, $type, $description, $model = null){
-        return \Wanglelecc\Laracms\Models\Log::create([
+        return \lionvc\Laracms\Models\Log::create([
             'group'          => $group,
             'type'           => $type,
             'description'    => $description,

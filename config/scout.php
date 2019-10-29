@@ -101,7 +101,7 @@ return [
             'distance' => 2
         ],
 
-        'tokenizer' => '\Wanglelecc\Laracms\Handlers\TokenizerHandler',
+        'tokenizer' => '\lionvc\Laracms\Handlers\TokenizerHandler',
 
         'jieba' => [
             'dict' => 'small',

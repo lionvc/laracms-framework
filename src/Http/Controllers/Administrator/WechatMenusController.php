@@ -4,22 +4,22 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
+namespace lionvc\Laracms\Http\Controllers\Administrator;
 
-use Wanglelecc\Laracms\Models\Wechat;
-use Wanglelecc\Laracms\Models\WechatMenu;
+use lionvc\Laracms\Models\Wechat;
+use lionvc\Laracms\Models\WechatMenu;
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Http\Requests\Administrator\WechatMenuRequest;
-use Wanglelecc\Laracms\Handlers\WechatMenuHandler;
+use lionvc\Laracms\Http\Requests\Administrator\WechatMenuRequest;
+use lionvc\Laracms\Handlers\WechatMenuHandler;
 use EasyWeChat\Factory;
 use EasyWeChat\Kernel\Exceptions\HttpException;
 
@@ -27,14 +27,14 @@ use EasyWeChat\Kernel\Exceptions\HttpException;
  * 微信菜单控制器
  *
  * Class WechatMenusController
- * @package Wanglelecc\Laracms\Http\Controllers\Administrator
+ * @package lionvc\Laracms\Http\Controllers\Administrator
  */
 class WechatMenusController extends Controller
 {
     public function __construct()
     {
         $this->middleware('auth', ['except' => ['index', 'show']]);
-    
+
         static::$activeNavId = 'website.wechat';
     }
 

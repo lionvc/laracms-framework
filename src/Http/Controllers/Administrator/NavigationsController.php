@@ -4,28 +4,28 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
+namespace lionvc\Laracms\Http\Controllers\Administrator;
 
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Http\Requests\Administrator\NavigationRequest;
+use lionvc\Laracms\Http\Requests\Administrator\NavigationRequest;
 use Illuminate\Support\Facades\View;
-use Wanglelecc\Laracms\Models\Navigation;
-use Wanglelecc\Laracms\Handlers\NavigationHandler;
+use lionvc\Laracms\Models\Navigation;
+use lionvc\Laracms\Handlers\NavigationHandler;
 
 /**
  * 导航控制器
  *
  * Class NavigationsController
- * @package Wanglelecc\Laracms\Http\Controllers\Administrator
+ * @package lionvc\Laracms\Http\Controllers\Administrator
  */
 class NavigationsController extends Controller
 {
@@ -33,7 +33,7 @@ class NavigationsController extends Controller
     {
         static::$activeNavId = 'website.navigation';
     }
-    
+
     /**
      * 列表
      *

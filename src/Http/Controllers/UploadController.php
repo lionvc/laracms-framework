@@ -4,30 +4,30 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers;
+namespace lionvc\Laracms\Http\Controllers;
 
 use Auth;
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Handlers\UploadHandler;
-use Wanglelecc\Laracms\Models\Article;
-use Wanglelecc\Laracms\Models\MultipleFile;
-use Wanglelecc\Laracms\Models\File;
+use lionvc\Laracms\Handlers\UploadHandler;
+use lionvc\Laracms\Models\Article;
+use lionvc\Laracms\Models\MultipleFile;
+use lionvc\Laracms\Models\File;
 use Vod\Request\V20170321 as Vod;
 
 /**
  * 文件上传控制器
  *
  * Class UploadController
- * @package Wanglelecc\Laracms\Http\Controllers
+ * @package lionvc\Laracms\Http\Controllers
  */
 class UploadController extends Controller
 {

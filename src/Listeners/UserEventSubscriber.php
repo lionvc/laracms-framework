@@ -4,16 +4,16 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Listeners;
+namespace lionvc\Laracms\Listeners;
 
 use Request;
 use Illuminate\Support\Carbon;
@@ -68,17 +68,17 @@ class UserEventSubscriber
     {
         $events->listen(
             'Illuminate\Auth\Events\Login',
-            'Wanglelecc\Laracms\Listeners\UserEventSubscriber@onUserLoginLast'
+            'lionvc\Laracms\Listeners\UserEventSubscriber@onUserLoginLast'
         );
 
         $events->listen(
             'Illuminate\Auth\Events\Login',
-            'Wanglelecc\Laracms\Listeners\UserEventSubscriber@onUserLogin'
+            'lionvc\Laracms\Listeners\UserEventSubscriber@onUserLogin'
         );
 
         $events->listen(
             'Illuminate\Auth\Events\Logout',
-            'Wanglelecc\Laracms\Listeners\UserEventSubscriber@onUserLogout'
+            'lionvc\Laracms\Listeners\UserEventSubscriber@onUserLogout'
         );
     }
 }

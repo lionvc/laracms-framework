@@ -1,6 +1,6 @@
 <?php
 
-namespace Wanglelecc\Laracms\Providers;
+namespace lionvc\Laracms\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,25 +13,25 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-		 \Wanglelecc\Laracms\Models\WechatResponse::class                  => \Wanglelecc\Laracms\Policies\WechatResponsePolicy::class,
-		 \Wanglelecc\Laracms\Models\WechatMenu::class                      => \Wanglelecc\Laracms\Policies\WechatMenuPolicy::class,
-		 \Wanglelecc\Laracms\Models\Wechat::class                          => \Wanglelecc\Laracms\Policies\WechatPolicy::class,
-		 \Wanglelecc\Laracms\Models\Article::class                         => \Wanglelecc\Laracms\Policies\ArticlePolicy::class,
-		 \Wanglelecc\Laracms\Models\Block::class                           => \Wanglelecc\Laracms\Policies\BlockPolicy::class,
-		 \Wanglelecc\Laracms\Models\Link::class                            => \Wanglelecc\Laracms\Policies\LinkPolicy::class,
-		 \Wanglelecc\Laracms\Models\Project::class                         => \Wanglelecc\Laracms\Policies\ProjectPolicy::class,
-		 \Wanglelecc\Laracms\Models\Slide::class                           => \Wanglelecc\Laracms\Policies\SlidePolicy::class,
-		 \Wanglelecc\Laracms\Models\Category::class                        => \Wanglelecc\Laracms\Policies\CategoryPolicy::class,
-		 \Wanglelecc\Laracms\Models\Navigation::class                      => \Wanglelecc\Laracms\Policies\NavigationPolicy::class,
-		 \Wanglelecc\Laracms\Models\File::class                            => \Wanglelecc\Laracms\Policies\FilePolicy::class,
-		 \Wanglelecc\Laracms\Models\Setting::class                         => \Wanglelecc\Laracms\Policies\SettingPolicy::class,
-         \Wanglelecc\Laracms\Models\User::class                            => \Wanglelecc\Laracms\Policies\UserPolicy::class,
-         \Wanglelecc\Laracms\Models\Page::class                            => \Wanglelecc\Laracms\Policies\PagePolicy::class,
-         \Wanglelecc\Laracms\Models\Reply::class                           => \Wanglelecc\Laracms\Policies\ReplyPolicy::class,
-         \Wanglelecc\Laracms\Models\Form::class                            => \Wanglelecc\Laracms\Policies\FormPolicy::class,
+		 \lionvc\Laracms\Models\WechatResponse::class                  => \lionvc\Laracms\Policies\WechatResponsePolicy::class,
+		 \lionvc\Laracms\Models\WechatMenu::class                      => \lionvc\Laracms\Policies\WechatMenuPolicy::class,
+		 \lionvc\Laracms\Models\Wechat::class                          => \lionvc\Laracms\Policies\WechatPolicy::class,
+		 \lionvc\Laracms\Models\Article::class                         => \lionvc\Laracms\Policies\ArticlePolicy::class,
+		 \lionvc\Laracms\Models\Block::class                           => \lionvc\Laracms\Policies\BlockPolicy::class,
+		 \lionvc\Laracms\Models\Link::class                            => \lionvc\Laracms\Policies\LinkPolicy::class,
+		 \lionvc\Laracms\Models\Project::class                         => \lionvc\Laracms\Policies\ProjectPolicy::class,
+		 \lionvc\Laracms\Models\Slide::class                           => \lionvc\Laracms\Policies\SlidePolicy::class,
+		 \lionvc\Laracms\Models\Category::class                        => \lionvc\Laracms\Policies\CategoryPolicy::class,
+		 \lionvc\Laracms\Models\Navigation::class                      => \lionvc\Laracms\Policies\NavigationPolicy::class,
+		 \lionvc\Laracms\Models\File::class                            => \lionvc\Laracms\Policies\FilePolicy::class,
+		 \lionvc\Laracms\Models\Setting::class                         => \lionvc\Laracms\Policies\SettingPolicy::class,
+         \lionvc\Laracms\Models\User::class                            => \lionvc\Laracms\Policies\UserPolicy::class,
+         \lionvc\Laracms\Models\Page::class                            => \lionvc\Laracms\Policies\PagePolicy::class,
+         \lionvc\Laracms\Models\Reply::class                           => \lionvc\Laracms\Policies\ReplyPolicy::class,
+         \lionvc\Laracms\Models\Form::class                            => \lionvc\Laracms\Policies\FormPolicy::class,
 
-         \Spatie\Permission\Models\Role::class                             => \Wanglelecc\Laracms\Policies\RolePolicy::class,
-         \Spatie\Permission\Models\Permission::class                       => \Wanglelecc\Laracms\Policies\PermissionPolicy::class,
+         \Spatie\Permission\Models\Role::class                             => \lionvc\Laracms\Policies\RolePolicy::class,
+         \Spatie\Permission\Models\Permission::class                       => \lionvc\Laracms\Policies\PermissionPolicy::class,
     ];
 
     /**

@@ -4,23 +4,23 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers;
+namespace lionvc\Laracms\Http\Controllers;
 
 use Auth;
 use Hash;
-use Wanglelecc\Laracms\Models\User;
+use lionvc\Laracms\Models\User;
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Handlers\UploadHandler;
-use Wanglelecc\Laracms\Http\Requests\UserRequest;
+use lionvc\Laracms\Handlers\UploadHandler;
+use lionvc\Laracms\Http\Requests\UserRequest;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 
@@ -28,7 +28,7 @@ use Illuminate\Validation\ValidationException;
  * 前台用户控制器
  *
  * Class UserController
- * @package Wanglelecc\Laracms\Http\Controllers
+ * @package lionvc\Laracms\Http\Controllers
  */
 class UserController extends Controller
 {

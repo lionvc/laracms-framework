@@ -38,7 +38,7 @@
                                     </span>
                                 </li>
                                 <li class="layui-form-li" style="margin-top: 20px; line-height: 26px;">
-                                    <div> 1. 如果您未收到邮件，或激活链接失效，您可以 <a class="layui-form-a" style="color:#4f99cf;" id="" href="{{route('user.activate')}}" email="wanglelecc@gmail.com">重新发送邮件</a>，或者 <a class="layui-form-a" style="color:#4f99cf;" href="{{route('user.settings','#info')}}">更换邮箱</a>； </div>
+                                    <div> 1. 如果您未收到邮件，或激活链接失效，您可以 <a class="layui-form-a" style="color:#4f99cf;" id="" href="{{route('user.activate')}}" email="lionvc@gmail.com">重新发送邮件</a>，或者 <a class="layui-form-a" style="color:#4f99cf;" href="{{route('user.settings','#info')}}">更换邮箱</a>； </div>
                                     <div> 2. 如果您始终没有收到发送的激活邮件，请注意查看您邮箱中的垃圾邮件； </div>
                                     <div> 3. 如果你实在无法激活邮件，您还可以邮箱联系管理员； </div>
                                 </li>

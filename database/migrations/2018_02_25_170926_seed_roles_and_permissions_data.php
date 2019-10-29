@@ -4,11 +4,11 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
@@ -115,20 +115,20 @@ class SeedRolesAndPermissionsData extends Migration
         $maintainer->givePermissionTo('manage_block');
         $maintainer->givePermissionTo('manage_annex');
         $maintainer->givePermissionTo('manage_form');
-    
+
         // 创建管理员账户
         $user = User::create([
             'name' => 'admin',
-            'email' => 'admin@56br.com',
+            'email' => 'admin@lionvc.com',
             'status' => '1',
             'password' => bcrypt('123456'),
             'avatar' => 'images/avatar/201803/04/9CT3XvX0Jcv8QEEzPCzgg8k0NXJVwrMsaKKf1iN9.jpeg',
         ]);
-        
+
         // 指派管理员角色
         $user->assignRole('Administrator');
         $user->save();
-        
+
     }
 
     /**

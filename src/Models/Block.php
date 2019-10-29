@@ -4,22 +4,22 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Models;
+namespace lionvc\Laracms\Models;
 
 /**
  * 区块模型
  *
  * Class Block
- * @package Wanglelecc\Laracms\Models
+ * @package lionvc\Laracms\Models
  */
 class Block extends Model
 {
@@ -29,7 +29,7 @@ class Block extends Model
     {
         return 'id';
     }
-    
+
     /**
      * 清除缓存
      *
@@ -39,9 +39,9 @@ class Block extends Model
      */
     public static function clearCache($object_id){
         $key = 'block_cache_'.$object_id;
-    
+
         \Cache::forget($key);
-    
+
         return true;
     }
 }

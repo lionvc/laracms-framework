@@ -4,11 +4,11 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    lionvc <lionvc@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/lionvc/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
@@ -35,7 +35,7 @@ class CreateDistrictTable extends Migration
             $table->string("center",30)->comment('城市中心点');
             $table->integer("parent")->default(0)->comment('父级ID');
             $table->timestamps();
-    
+
             $table->index('parent','parent_index');
             $table->index('adcode','adcode_index');
             $table->index('level','level_index');
