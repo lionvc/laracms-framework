@@ -48,8 +48,7 @@
         "tymon/jwt-auth": "~1.0.0-rc.1",
         "vinkla/hashids": "^5.1",
         "zhuzhichao/ip-location-zh": "^2.4",
-//        "anchnet/aliyun-openapi-php-sdk": "dev-master"
-        "aliyun/aliyun-openapi-php-sdk": "dev-master",
+        "aliyun/aliyun-openapi-php-sdk": "dev-master"
 
     },
     "require-dev": {
